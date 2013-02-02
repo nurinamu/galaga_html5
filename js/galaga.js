@@ -310,6 +310,17 @@ function initPlayer(isGame) {
     }
 }
 
+function initSpideMode() {
+    isCaptured = false;
+    isCapturing = false;
+    isGalagaMerged = false;
+    numOfGalaga = 1;
+    isSpiderMove = false;
+    hasSpider = false;
+    isViming = false;
+    tmpYPos = 370;
+}
+
 /**
  * clears the GALAGA_CANVAS and redraws the player
  */
@@ -740,6 +751,7 @@ function setStartGame() {
 
 function setPreGame() {
     initPlayer(false);
+    initSpideMode();
 }
 
 function setPostLevel() {
