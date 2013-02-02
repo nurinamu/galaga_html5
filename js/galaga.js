@@ -724,6 +724,7 @@ function setEndGame(str) {
         clearInterval(intervalLoop);
         intervalLoop = 0;
         setPreGame();
+        initSpideMode();
     } else {
         if (DEBUG) {
             alert("Game Over! because [" + str + "]");
@@ -751,7 +752,7 @@ function setStartGame() {
 
 function setPreGame() {
     initPlayer(false);
-    initSpideMode();
+
 }
 
 function setPostLevel() {
